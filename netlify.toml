@@ -1,0 +1,17 @@
+[build]
+  command = "pnpm run netlify:build"
+  publish = "dist/public"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+  PNPM_VERSION = "10"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true

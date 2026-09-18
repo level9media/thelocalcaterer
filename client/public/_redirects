@@ -1,0 +1,130 @@
+# =============================================================
+# The Local Caterer — Netlify _redirects
+# SEO Migration Redirect Map — CRITICAL: DO NOT MODIFY WITHOUT REVIEW
+# Preserves all existing Wix URLs → New site structure
+# Protects current 3-5 leads/day and existing Google rankings
+# Last updated: 2026-04-12
+# =============================================================
+
+# ---- CORE PAGES (1:1 preserved — same URL, no redirect needed) ----
+/contact                    /contact                    200
+/about                      /about                      200
+/services                   /services                   200
+/blog                       /blog                       200
+/privacy-policy             /privacy-policy             200
+/contact/thanks             /contact/thanks             200
+
+# ---- SERVICE PAGES (1:1 preserved) ----
+/wedding-catering-mesa-az           /wedding-catering-mesa-az           200
+/corporate-event-catering           /corporate-event-catering           200
+/private-event-catering             /private-event-catering             200
+/private-party-catering             /private-party-catering             200
+/baby-shower-catering               /baby-shower-catering               200
+/celebration-of-life-catering       /celebration-of-life-catering       200
+/barbecue-catering                  /barbecue-catering                  200
+
+# ---- MENU PAGES (1:1 preserved) ----
+/catering-menu              /catering-menu              200
+/mexican-catering-menu      /catering-menu              301
+/lunch-catering-menu        /catering-menu              301
+/italian-catering-menu      /catering-menu              301
+/holiday-menu-2025          /catering-menu              301
+/breakfast-catering-menu    /catering-menu              301
+/asian-catering-menu        /catering-menu              301
+/dessert-menu               /catering-menu              301
+/sandwich-bar-mesa-az       /catering-menu              301
+
+# ---- LOCATION PAGES (1:1 preserved) ----
+/catering-mesa-az           /catering-mesa-az           200
+/catering-phoenix-az        /catering-phoenix-az        200
+/catering-scottsdale-az     /catering-scottsdale-az     200
+/catering-chandler-az       /catering-chandler-az       200
+/catering-gilbert-az        /catering-gilbert-az        200
+
+# ---- LEGACY WIX PAGES → Best match 301 redirects ----
+/modernmoments                      /wedding-catering-mesa-az           301
+/copy-of-modern-moments             /wedding-catering-mesa-az           301
+/general-5                          /services                           301
+/home                               /                                   301
+/index                              /                                   301
+/index.html                         /                                   301
+/gallery                            /about                              301
+/our-story                          /about                              301
+/meet-the-team                      /about                              301
+/chef                               /about                              301
+/faq                                /contact                            301
+/faqs                               /contact                            301
+/book-now                           /contact                            301
+/booking                            /contact                            301
+/request-a-quote                    /contact                            301
+/get-a-quote                        /contact                            301
+/quote                              /contact                            301
+/inquiry                            /contact                            301
+/event-inquiry                      /contact                            301
+/catering-inquiry                   /contact                            301
+/wedding-inquiry                    /contact                            301
+/corporate-inquiry                  /contact                            301
+/menu                               /catering-menu                      301
+/menus                              /catering-menu                      301
+/our-menu                           /catering-menu                      301
+/food-menu                          /catering-menu                      301
+/catering-services                  /services                           301
+/event-catering                     /private-event-catering             301
+/events                             /private-event-catering             301
+/weddings                           /wedding-catering-mesa-az           301
+/wedding                            /wedding-catering-mesa-az           301
+/corporate                          /corporate-event-catering           301
+/corporate-catering                 /corporate-event-catering           301
+/bbq                                /barbecue-catering                  301
+/bbq-catering                       /barbecue-catering                  301
+/baby-shower                        /baby-shower-catering               301
+/celebration-of-life                /celebration-of-life-catering       301
+/memorial                           /celebration-of-life-catering       301
+/memorial-catering                  /celebration-of-life-catering       301
+/private-party                      /private-party-catering             301
+/private-parties                    /private-party-catering             301
+
+# ---- BLOG POSTS (1:1 preserved — CRITICAL for SEO rankings) ----
+/post/wedding-catering-east-valley-mesa-chandler-gilbert                                                    /post/wedding-catering-east-valley-mesa-chandler-gilbert                                                    200
+/post/affordable-catering-near-me-discover-budget-friendly-options-in-mesa-gilbert-and-queen-creek          /post/affordable-catering-near-me-discover-budget-friendly-options-in-mesa-gilbert-and-queen-creek          200
+/post/the-best-catering-services-in-mesa-az-a-guide-to-the-local-caterer                                    /post/the-best-catering-services-in-mesa-az-a-guide-to-the-local-caterer                                    200
+/post/catering-mesa-az-the-local-caterers-guide-to-unforgettable-events                                     /post/catering-mesa-az-the-local-caterers-guide-to-unforgettable-events                                     200
+/post/best-catering-companies-in-gilbert-az                                                                 /post/best-catering-companies-in-gilbert-az                                                                 200
+/post/catering-companies-in-chandler-az-your-guide-to-the-best-local-caterers                               /post/catering-companies-in-chandler-az-your-guide-to-the-best-local-caterers                               200
+/post/planning-corporate-events-for-2026-here-s-why-early-booking-matters                                   /post/planning-corporate-events-for-2026-here-s-why-early-booking-matters                                   200
+/post/why-summer-2026-weddings-are-booking-earlier-than-ever                                                /post/why-summer-2026-weddings-are-booking-earlier-than-ever                                                200
+/post/corporate-catering-scottsdale-phoenix-mesa-az                                                         /post/corporate-catering-scottsdale-phoenix-mesa-az                                                         200
+/post/how-to-plan-the-perfect-backyard-bbq-catering-in-arizona                                             /post/how-to-plan-the-perfect-backyard-bbq-catering-in-arizona                                             200
+/post/baby-shower-catering-mesa-az-ideas-menus-and-tips                                                    /post/baby-shower-catering-mesa-az-ideas-menus-and-tips                                                    200
+/post/celebration-of-life-catering-mesa-az-honoring-a-loved-one-with-food                                  /post/celebration-of-life-catering-mesa-az-honoring-a-loved-one-with-food                                  200
+
+# ---- LEGACY BLOG POSTS → Best match 301 redirects ----
+/post/the-best-catering-companies-in-mesa-az-for-any-event                                                  /post/the-best-catering-services-in-mesa-az-a-guide-to-the-local-caterer                                    301
+/post/the-best-catering-companies-in-mesa-az                                                                /post/the-best-catering-services-in-mesa-az-a-guide-to-the-local-caterer                                    301
+/post/top-catering-companies-in-mesa-az-your-guide-to-the-best-local-caterers                               /post/the-best-catering-services-in-mesa-az-a-guide-to-the-local-caterer                                    301
+/post/catering-in-mesa-az-everything-you-need-to-know                                                       /post/catering-mesa-az-the-local-caterers-guide-to-unforgettable-events                                     301
+/post/catering-companies-in-scottsdale-az-your-guide-to-the-best-local-caterers                             /post/corporate-catering-scottsdale-phoenix-mesa-az                                                         301
+/post/catering-companies-in-phoenix-az-your-guide-to-the-best-local-caterers                               /post/corporate-catering-scottsdale-phoenix-mesa-az                                                         301
+/post/beautiful-catering-board-mesa-az                                                                      /post/the-best-catering-services-in-mesa-az-a-guide-to-the-local-caterer                                    301
+/post/ultimate-guide-to-selecting-the-best-catering-in-mesa-az-for-your-events                             /post/catering-mesa-az-the-local-caterers-guide-to-unforgettable-events                                     301
+
+# ---- BLOG CATEGORIES (1:1 preserved) ----
+/blog/categories/personal-press-awards         /blog/categories/personal-press-awards          200
+/blog/categories/wedding-catering              /blog/categories/wedding-catering               200
+/blog/categories/food-blogging-mesa            /blog/categories/food-blogging-mesa             200
+/blog/categories/holiday-catering              /blog/categories/holiday-catering               200
+/blog/categories/corporate-catering            /blog/categories/corporate-catering             200
+/blog/categories/private-event-catering        /blog/categories/private-event-catering         200
+
+# ---- COMMON TRAILING SLASH VARIANTS ----
+/contact/                   /contact                    301
+/about/                     /about                      301
+/services/                  /services                   301
+/blog/                      /blog                       301
+/catering-menu/             /catering-menu              301
+/wedding-catering-mesa-az/  /wedding-catering-mesa-az   301
+/corporate-event-catering/  /corporate-event-catering   301
+/private-event-catering/    /private-event-catering     301
+
+# ---- SPA FALLBACK (MUST be last — handles all React Router paths) ----
+/*    /index.html    200

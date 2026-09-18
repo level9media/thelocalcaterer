@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1776031680649,
+      "tag": "0000_gray_justin_hammer",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1776034670597,
+      "tag": "0001_eminent_patriot",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1777336212888,
+      "tag": "0002_lucky_naoko",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1782272612186,
+      "tag": "0003_pale_wallow",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1784844141900,
+      "tag": "0004_tiresome_jetstream",
+      "breakpoints": true
+    }
+  ]
+}
