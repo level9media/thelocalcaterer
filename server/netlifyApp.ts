@@ -1,6 +1,7 @@
 import express from "express";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import Stripe from "stripe";
+import { sql } from "drizzle-orm";
 import { appRouter } from "./routers";
 import { createContext } from "./_core/context";
 import { registerOAuthRoutes } from "./_core/oauth";
@@ -70,6 +71,36 @@ export function createNetlifyApp() {
   registerOAuthRoutes(app);
   app.use("/api/trpc", createExpressMiddleware({ router: appRouter, createContext }));
   app.get("/api/health", (_req, res) => res.json({ ok: true, runtime: "netlify-functions" }));
+
+  // TEMPORARY: one-time migration runner to create the jobApplications table.
+  // Protected by JWT_SECRET as a simple shared secret. Remove this route after use.
+  app.get("/api/admin/run-migration", async (req, res) => {
+    if (req.query.secret !== process.env.JWT_SECRET) {
+      return res.status(403).json({ error: "forbidden" });
+    }
+    try {
+      const db = await getDb();
+      if (!db) return res.status(500).json({ error: "no db connection" });
+      await db.execute(sql`
+        CREATE TABLE IF NOT EXISTS \`jobApplications\` (
+          \`id\` int AUTO_INCREMENT NOT NULL,
+          \`name\` varchar(255) NOT NULL,
+          \`email\` varchar(320) NOT NULL,
+          \`phone\` varchar(30),
+          \`position\` varchar(255) NOT NULL,
+          \`experience\` varchar(100),
+          \`availability\` varchar(100),
+          \`message\` text,
+          \`status\` enum('new','reviewed','interviewed','hired','rejected') NOT NULL DEFAULT 'new',
+          \`createdAt\` timestamp NOT NULL DEFAULT (now()),
+          CONSTRAINT \`jobApplications_id\` PRIMARY KEY(\`id\`)
+        )
+      `);
+      return res.json({ success: true, message: "jobApplications table created (or already existed)" });
+    } catch (error) {
+      return res.status(500).json({ error: String(error) });
+    }
+  });
 
   return app;
 }
