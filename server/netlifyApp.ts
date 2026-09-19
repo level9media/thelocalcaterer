@@ -97,8 +97,14 @@ export function createNetlifyApp() {
         )
       `);
       return res.json({ success: true, message: "jobApplications table created (or already existed)" });
-    } catch (error) {
-      return res.status(500).json({ error: String(error) });
+    } catch (error: any) {
+      return res.status(500).json({
+        error: String(error?.message ?? error),
+        cause: error?.cause ? String(error.cause?.message ?? error.cause) : null,
+        code: error?.cause?.code ?? error?.code ?? null,
+        errno: error?.cause?.errno ?? error?.errno ?? null,
+        sqlState: error?.cause?.sqlState ?? error?.sqlState ?? null,
+      });
     }
   });
 
