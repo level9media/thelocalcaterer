@@ -125,6 +125,8 @@
 /wedding-catering-mesa-az/  /wedding-catering-mesa-az   301
 /corporate-event-catering/  /corporate-event-catering   301
 /private-event-catering/    /private-event-catering     301
+# ---- API ROUTES (must come before SPA fallback) ----
+/api/*    /.netlify/functions/api/:splat    200
 
 # ---- SPA FALLBACK (MUST be last — handles all React Router paths) ----
 /*    /index.html    200
