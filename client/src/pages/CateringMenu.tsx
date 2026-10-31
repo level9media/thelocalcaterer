@@ -5,7 +5,7 @@
  */
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { ArrowRight, Download, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowRight, BookOpen, Download, ChevronDown, ChevronUp } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -557,12 +557,69 @@ export default function CateringMenu() {
               Request a Custom Quote <ArrowRight size={16} />
             </a>
             <a
+              href="#catering-catalog"
+              className="flex items-center gap-2 px-6 py-3 text-xs font-semibold uppercase tracking-widest transition-all"
+              style={{ backgroundColor: "#F5EFE0", border: "1.5px solid #F5EFE0", color: "#1A1A1A", fontFamily: "'Outfit', sans-serif" }}
+            >
+              <BookOpen size={14} /> View the 2026–27 Catalog
+            </a>
+            <a
               href="https://d2xsxph8kpxj0f.cloudfront.net/310519663450394445/axqRDPajaxMWvyLBL3kxLr/thelocalcaterer-menu-2025_59b757eb.pdf"
               download="TheLocalCaterer-Menu.pdf"
               className="flex items-center gap-2 px-6 py-3 text-xs font-semibold uppercase tracking-widest transition-all"
               style={{ backgroundColor: "transparent", border: "1.5px solid rgba(245,239,224,0.5)", color: "#F5EFE0", fontFamily: "'Outfit', sans-serif" }}
             >
               <Download size={14} /> Download Menu PDF
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 2026–27 Catering Collection flipbook */}
+      <section id="catering-catalog" className="py-16 scroll-mt-24" style={{ backgroundColor: "#fff" }}>
+        <div className="container">
+          <p className="text-xs uppercase tracking-[0.25em] font-semibold mb-2" style={{ color: "#C1440E", fontFamily: "'Outfit', sans-serif" }}>
+            New for 2026–2027
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: "#1A1A1A" }}>
+            The Local Caterer Catering Collection
+          </h2>
+          <p className="text-base max-w-2xl mb-8" style={{ color: "#4A4A4A", fontFamily: "'Outfit', sans-serif" }}>
+            Flip through our complete 2026–2027 catering catalog — weddings, corporate events, private parties, holiday gatherings and more,
+            all prepared fresh in our Mesa kitchen and served across Phoenix and the East Valley. Every menu can be customized for your event.
+          </p>
+          <div
+            className="relative w-full overflow-hidden shadow-lg"
+            style={{ border: "2px solid #EDE6D3", backgroundColor: "#F5EFE0", aspectRatio: "16 / 10", minHeight: "420px" }}
+          >
+            <iframe
+              src="https://www.flipsnack.com/7C95E5B569B/the-local-caterer-catering-collection/full-view.html"
+              title="The Local Caterer Catering Collection 2026–2027 flipbook"
+              className="absolute inset-0 w-full h-full"
+              style={{ border: "none" }}
+              loading="lazy"
+              allow="autoplay; clipboard-read; clipboard-write; fullscreen"
+              allowFullScreen
+            />
+          </div>
+          <div className="flex flex-wrap items-center gap-4 mt-6">
+            <a
+              href="https://www.flipsnack.com/7C95E5B569B/the-local-caterer-catering-collection"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 text-xs font-semibold uppercase tracking-widest transition-all"
+              style={{ backgroundColor: "#2D6A4F", color: "#F5EFE0", fontFamily: "'Outfit', sans-serif" }}
+            >
+              <BookOpen size={14} /> Open Full Screen
+            </a>
+            <a
+              href="https://thelocalcaterer.tripleseat.com/party_request/34341"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold underline underline-offset-4"
+              style={{ color: "#C1440E", fontFamily: "'Outfit', sans-serif" }}
+            >
+              Found something you love? Request a quote
             </a>
           </div>
         </div>
