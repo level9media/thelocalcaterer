@@ -46,6 +46,8 @@ Call (480) 718-1671 or request a free corporate catering quote online. Same-day 
       { label: "Wedding Catering", href: "/wedding-catering-mesa-az" },
       { label: "Private Events", href: "/private-event-catering" },
       { label: "BBQ Catering", href: "/barbecue-catering" },
+      { label: "Office Lunch Catering", href: "/office-lunch-catering" },
+      { label: "Holiday Party Catering", href: "/holiday-catering" },
     ]}
     metaTitle="Corporate Event Catering Mesa AZ | The Local Caterer"
     metaDescription="Professional corporate catering in Mesa, Phoenix & Scottsdale. Office lunches, conferences, team events. Reliable, on-time, delicious. 500+ events served. Call (480) 718-1671."

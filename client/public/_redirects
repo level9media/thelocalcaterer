@@ -40,6 +40,8 @@
 /catering-scottsdale-az     /catering-scottsdale-az     200
 /catering-chandler-az       /catering-chandler-az       200
 /catering-gilbert-az        /catering-gilbert-az        200
+/catering-tempe-az          /catering-tempe-az          200
+/catering-queen-creek-az    /catering-queen-creek-az    200
 
 # ---- LEGACY WIX PAGES → Best match 301 redirects ----
 /modernmoments                      /wedding-catering-mesa-az           301
@@ -69,8 +71,7 @@
 /our-menu                           /catering-menu                      301
 /food-menu                          /catering-menu                      301
 /catering-services                  /services                           301
-/event-catering                     /private-event-catering             301
-/events                             /private-event-catering             301
+/events                             /event-catering                     301
 /weddings                           /wedding-catering-mesa-az           301
 /wedding                            /wedding-catering-mesa-az           301
 /corporate                          /corporate-event-catering           301

@@ -15,6 +15,9 @@ const services = [
   { label: "Baby Shower Catering", href: "/baby-shower-catering" },
   { label: "Celebration of Life", href: "/celebration-of-life-catering" },
   { label: "BBQ Catering", href: "/barbecue-catering" },
+  { label: "Office Lunch Catering", href: "/office-lunch-catering" },
+  { label: "Holiday Catering", href: "/holiday-catering" },
+  { label: "Small Party Catering", href: "/small-party-catering" },
 ];
 
 const locations = [
@@ -23,6 +26,8 @@ const locations = [
   { label: "Scottsdale, AZ", href: "/catering-scottsdale-az" },
   { label: "Chandler, AZ", href: "/catering-chandler-az" },
   { label: "Gilbert, AZ", href: "/catering-gilbert-az" },
+  { label: "Tempe, AZ", href: "/catering-tempe-az" },
+  { label: "Queen Creek, AZ", href: "/catering-queen-creek-az" },
 ];
 
 interface NavigationProps {

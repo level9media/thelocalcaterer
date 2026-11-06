@@ -4,6 +4,7 @@ import superjson from "superjson";
 import { fileURLToPath } from "node:url";
 import { INDEXABLE_ROUTES, NOINDEX_ROUTE_META } from "../shared/seoRoutes";
 import { buildSeoHead, getPageMeta } from "../server/seoMeta";
+import { buildSitemapXml } from "../server/sitemap";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = path.join(projectRoot, "dist", "public");
@@ -39,5 +40,8 @@ for (const pathname of Object.keys(NOINDEX_ROUTE_META)) {
     .replace("</body>", () => `<script>window.__RQ_STATE__ = ${JSON.stringify(superjson.serialize({ queries: [], mutations: [] }))}</script></body>`);
   await writeRoute(pathname, shell);
 }
+
+// Static sitemap generated from the same route registry, so new pages are always included on Netlify.
+await fs.writeFile(path.join(publicDir, "sitemap.xml"), buildSitemapXml());
 
 console.log(`Prerendered ${INDEXABLE_ROUTES.length} indexable routes and ${Object.keys(NOINDEX_ROUTE_META).length} noindex app shells for Netlify.`);

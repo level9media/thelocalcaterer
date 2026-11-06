@@ -56,7 +56,7 @@ export function buildSeoHead(meta: PageMeta): string {
     },
     priceRange: "$$-$$$",
     servesCuisine: ["American", "Italian", "Mexican", "BBQ", "Mediterranean"],
-    areaServed: ["Mesa, AZ", "Phoenix, AZ", "Scottsdale, AZ", "Chandler, AZ", "Gilbert, AZ"],
+    areaServed: ["Mesa, AZ", "Phoenix, AZ", "Scottsdale, AZ", "Chandler, AZ", "Gilbert, AZ", "Tempe, AZ", "Queen Creek, AZ"],
     sameAs: [
       "https://www.facebook.com/thelocalcatereraz",
       "https://www.instagram.com/thelocalcaterer",

@@ -21,6 +21,7 @@ interface ServicePageProps {
   body: string;
   features: string[];
   faqs?: FaqItem[];
+  sections?: { heading: string; body: string }[];
   relatedServices?: { label: string; href: string }[];
   // SEO props
   metaTitle?: string;
@@ -37,6 +38,7 @@ export default function ServicePage({
   body,
   features,
   faqs,
+  sections,
   relatedServices,
   metaTitle,
   metaDescription,
@@ -67,7 +69,7 @@ export default function ServicePage({
       url: "https://www.thelocalcaterer.com",
       telephone: "(480) 718-1671",
     },
-    areaServed: ["Mesa, AZ", "Phoenix, AZ", "Scottsdale, AZ", "Chandler, AZ", "Gilbert, AZ"],
+    areaServed: ["Mesa, AZ", "Phoenix, AZ", "Scottsdale, AZ", "Chandler, AZ", "Gilbert, AZ", "Tempe, AZ", "Queen Creek, AZ"],
     serviceType: serviceType || "Catering",
   };
 
@@ -116,6 +118,14 @@ export default function ServicePage({
                   </div>
                 ))}
               </div>
+              {sections && sections.map((sec) => (
+                <div key={sec.heading} className="mt-12">
+                  <h2 className="text-2xl md:text-3xl font-semibold mb-5" style={{ fontFamily: "'Cormorant Garamond', serif", color: "#1A1A1A" }}>{sec.heading}</h2>
+                  {sec.body.split("\n\n").map((p, i) => (
+                    <p key={i} className="text-base leading-relaxed mb-5" style={{ color: "#444", fontFamily: "'Outfit', sans-serif" }}>{p}</p>
+                  ))}
+                </div>
+              ))}
             </div>
             <div>
               <div className="p-8 mb-6" style={{ backgroundColor: "#2D6A4F" }}>

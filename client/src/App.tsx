@@ -33,6 +33,9 @@ import PhoenixAZ from "./pages/locations/PhoenixAZ";
 import ScottsdaleAZ from "./pages/locations/ScottsdaleAZ";
 import ChandlerAZ from "./pages/locations/ChandlerAZ";
 import GilbertAZ from "./pages/locations/GilbertAZ";
+import TempeAZ from "./pages/locations/TempeAZ";
+import QueenCreekAZ from "./pages/locations/QueenCreekAZ";
+import { EventCatering, FullServiceCatering, SmallPartyCatering, BirthdayPartyCatering, AffordableCatering, OfficeLunchCatering, HolidayCatering } from "./pages/IntentPages";
 
 import Gallery from "./pages/Gallery";
 import Press from "./pages/Press";
@@ -64,6 +67,13 @@ function Router() {
       <Route path="/baby-shower-catering" component={BabyShowerCatering} />
       <Route path="/celebration-of-life-catering" component={CelebrationOfLife} />
       <Route path="/barbecue-catering" component={BarbecueCatering} />
+      <Route path="/event-catering" component={EventCatering} />
+      <Route path="/full-service-catering" component={FullServiceCatering} />
+      <Route path="/small-party-catering" component={SmallPartyCatering} />
+      <Route path="/birthday-party-catering" component={BirthdayPartyCatering} />
+      <Route path="/affordable-catering" component={AffordableCatering} />
+      <Route path="/office-lunch-catering" component={OfficeLunchCatering} />
+      <Route path="/holiday-catering" component={HolidayCatering} />
 
       {/* Menu Pages — all served by CateringMenu with per-route SEO */}
       <Route path="/catering-menu" component={CateringMenu} />
@@ -82,6 +92,8 @@ function Router() {
       <Route path="/catering-scottsdale-az" component={ScottsdaleAZ} />
       <Route path="/catering-chandler-az" component={ChandlerAZ} />
       <Route path="/catering-gilbert-az" component={GilbertAZ} />
+      <Route path="/catering-tempe-az" component={TempeAZ} />
+      <Route path="/catering-queen-creek-az" component={QueenCreekAZ} />
 
       {/* Gallery */}
       <Route path="/gallery" component={Gallery} />

@@ -22,6 +22,13 @@ const services = [
   { title: "Baby Shower Catering", desc: "Beautiful, delicious catering for baby showers and gender reveal parties.", href: "/baby-shower-catering", img: MINI_CHEESECAKES },
   { title: "Celebration of Life", desc: "Compassionate, professional catering for memorial services and celebrations of life.", href: "/celebration-of-life-catering", img: ELEGANT_DESSERT },
   { title: "BBQ Catering", desc: "Authentic Arizona BBQ catering for any outdoor event or gathering.", href: "/barbecue-catering", img: CHEF_MEATBALLS },
+  { title: "Event Catering", desc: "Full-service and drop-off catering for galas, fundraisers, and special events of every size.", href: "/event-catering", img: "/assets/media/0M6A0098_97c6aea4.webp" },
+  { title: "Office Lunch Catering", desc: "Team lunches, boxed lunches, and meeting catering delivered on time.", href: "/office-lunch-catering", img: "/assets/media/img_6738_7f143df1.webp" },
+  { title: "Holiday Catering", desc: "Office holiday parties, Thanksgiving, Christmas and New Year's catering.", href: "/holiday-catering", img: "/assets/media/ChickenSataySkewersw_PeanutSauce_107c68ef.webp" },
+  { title: "Small Party Catering", desc: "Big-event quality for gatherings of 10 to 50 guests.", href: "/small-party-catering", img: "/assets/media/1L7A9350_d7d4c8fe.webp" },
+  { title: "Birthday Party Catering", desc: "Kids' parties, milestone birthdays, and quinceañeras.", href: "/birthday-party-catering", img: "/assets/media/IMG_3356_f4c0eba1.webp" },
+  { title: "Full-Service Catering", desc: "Food, staff, setup, service and cleanup handled start to finish.", href: "/full-service-catering", img: "/assets/media/0M6A0157_2a659271.webp" },
+  { title: "Affordable Catering", desc: "Chef-made menus built around your budget.", href: "/affordable-catering", img: "/assets/media/_DSC0268_127ded6e.webp" },
 ];
 
 export default function Services() {

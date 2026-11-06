@@ -35,6 +35,9 @@ const SERVICE_LINKS = [
   { label: "Wedding Catering", href: "/wedding-catering-mesa-az" },
   { label: "Corporate Catering", href: "/corporate-event-catering" },
   { label: "Private Events", href: "/private-event-catering" },
+  { label: "Office Lunch Catering", href: "/office-lunch-catering" },
+  { label: "Small Party Catering", href: "/small-party-catering" },
+  { label: "Holiday Catering", href: "/holiday-catering" },
 ];
 
 const LOCATION_LINKS = [
@@ -43,6 +46,8 @@ const LOCATION_LINKS = [
   { label: "Catering in Scottsdale, AZ", href: "/catering-scottsdale-az" },
   { label: "Catering in Chandler, AZ", href: "/catering-chandler-az" },
   { label: "Catering in Gilbert, AZ", href: "/catering-gilbert-az" },
+  { label: "Catering in Tempe, AZ", href: "/catering-tempe-az" },
+  { label: "Catering in Queen Creek, AZ", href: "/catering-queen-creek-az" },
 ];
 
 function FaqItem({ faq }: { faq: LocationFaq }) {
