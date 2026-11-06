@@ -100,7 +100,7 @@ export default function LocationPage({
     provider: {
       "@type": "LocalBusiness",
       name: "The Local Caterer",
-      url: "https://www.thelocalcaterer.com",
+      url: "https://thelocalcaterer.com",
       telephone: "(480) 718-1671",
     },
     areaServed: {

@@ -1,6 +1,6 @@
 import { absoluteCanonical, getRouteMeta, normalizeRoutePath, SITE_NAME } from "../shared/seoRoutes";
 
-const DEFAULT_IMAGE = "https://www.thelocalcaterer.com/assets/media/hero_main_3ee61e07.webp";
+const DEFAULT_IMAGE = "https://thelocalcaterer.com/assets/media/hero_main_3ee61e07.webp";
 
 export interface PageMeta {
   title: string;
@@ -42,9 +42,9 @@ export function buildSeoHead(meta: PageMeta): string {
   const localBusinessSchema = JSON.stringify({
     "@context": "https://schema.org",
     "@type": ["FoodEstablishment", "CateringService"],
-    "@id": "https://www.thelocalcaterer.com/#business",
+    "@id": "https://thelocalcaterer.com/#business",
     name: SITE_NAME,
-    url: "https://www.thelocalcaterer.com/",
+    url: "https://thelocalcaterer.com/",
     telephone: "(480) 718-1671",
     image,
     address: {

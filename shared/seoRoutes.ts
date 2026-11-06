@@ -1,5 +1,5 @@
 export const SITE_NAME = "The Local Caterer";
-export const SITE_ORIGIN = "https://www.thelocalcaterer.com";
+export const SITE_ORIGIN = "https://thelocalcaterer.com";
 
 export type SiteSection =
   | "Company"
@@ -602,5 +602,6 @@ export function getFooterLinks(section: SiteSection): RouteMeta[] {
 }
 
 export function absoluteCanonical(path: string): string {
-  return `${SITE_ORIGIN}${path === "/" ? "/" : path}`;
+  // Netlify serves pages at /path/ (trailing slash) on the apex domain — canonical must match exactly.
+  return `${SITE_ORIGIN}${path === "/" ? "/" : `${path.replace(/\/+$/, "")}/`}`;
 }

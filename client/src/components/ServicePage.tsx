@@ -66,7 +66,7 @@ export default function ServicePage({
     provider: {
       "@type": "LocalBusiness",
       name: "The Local Caterer",
-      url: "https://www.thelocalcaterer.com",
+      url: "https://thelocalcaterer.com",
       telephone: "(480) 718-1671",
     },
     areaServed: ["Mesa, AZ", "Phoenix, AZ", "Scottsdale, AZ", "Chandler, AZ", "Gilbert, AZ", "Tempe, AZ", "Queen Creek, AZ"],

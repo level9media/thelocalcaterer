@@ -31,7 +31,7 @@ if [[ "$title_count" != "1" || "$canonical_count" != "1" ]]; then
   exit 1
 fi
 
-if ! grep -q "https://www.thelocalcaterer.com$DEEP_PATH" "$TMP_HTML"; then
+if ! grep -q "https://thelocalcaterer.com$DEEP_PATH" "$TMP_HTML"; then
   echo "FAIL: self-referencing canonical was not found"
   exit 1
 fi
@@ -42,7 +42,7 @@ if [[ "$sitemap_count" -lt 45 ]]; then
   exit 1
 fi
 
-if ! curl -sS "$BASE/robots.txt" | grep -q 'Sitemap: https://www.thelocalcaterer.com/sitemap.xml'; then
+if ! curl -sS "$BASE/robots.txt" | grep -q 'Sitemap: https://thelocalcaterer.com/sitemap.xml'; then
   echo "FAIL: robots.txt does not reference the canonical sitemap"
   exit 1
 fi

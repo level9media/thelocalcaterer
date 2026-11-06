@@ -2,7 +2,7 @@
  * Page schema helper. Route-level title, description, canonical, and social tags
  * are owned by shared RouteHead + server rendering to prevent duplicate SEO tags.
  */
-const SITE_URL = "https://www.thelocalcaterer.com";
+const SITE_URL = "https://thelocalcaterer.com";
 
 export interface SEOProps {
   title: string;

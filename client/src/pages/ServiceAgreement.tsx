@@ -386,7 +386,7 @@ export default function ServiceAgreement() {
       <SEO
         title="Service Agreement | The Local Caterer — Mesa, AZ"
         description="Review The Local Caterer's full service agreement including payment terms, cancellation policy, delivery fees, and staffing rates for catering events in Mesa, Phoenix, and the East Valley."
-        canonical="https://www.thelocalcaterer.com/service-agreement"
+        canonical="https://thelocalcaterer.com/service-agreement"
       />
 
       {/* Print-only styles */}
@@ -489,7 +489,7 @@ export default function ServiceAgreement() {
                       <Phone size={14} style={{ color: "#C1440E" }} />
                       480.718.1671
                     </a>
-                    <a href="https://www.thelocalcaterer.com" className="flex items-center gap-2 text-sm hover:opacity-80 transition-opacity" style={{ color: "rgba(245,239,224,0.85)", fontFamily: "'Outfit', sans-serif" }}>
+                    <a href="https://thelocalcaterer.com" className="flex items-center gap-2 text-sm hover:opacity-80 transition-opacity" style={{ color: "rgba(245,239,224,0.85)", fontFamily: "'Outfit', sans-serif" }}>
                       <Globe size={14} style={{ color: "#C1440E" }} />
                       thelocalcaterer.com
                     </a>

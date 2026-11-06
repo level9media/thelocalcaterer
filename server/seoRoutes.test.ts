@@ -14,7 +14,7 @@ describe("SEO route registry", () => {
       const meta = getRouteMeta(route.path);
       expect(meta?.title).toBe(route.title);
       expect(meta?.description.length).toBeGreaterThan(50);
-      expect(absoluteCanonical(route.path)).toBe(`https://www.thelocalcaterer.com${route.path === "/" ? "/" : route.path}`);
+      expect(absoluteCanonical(route.path)).toBe(`https://thelocalcaterer.com${route.path === "/" ? "/" : `${route.path}/`}`);
     });
   });
 

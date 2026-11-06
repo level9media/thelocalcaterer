@@ -42,7 +42,7 @@ const awards = [
     org: "BusinessRate",
     year: "2025",
     description: "Recognized as a Top 3 Caterer in Mesa for 2025 by BusinessRate, an award based entirely on verified Google Review data and customer feedback. This recognition is earned through consistent service, quality food, and the trust of the community — not paid for or applied for.",
-    url: "https://www.thelocalcaterer.com/post/the-local-caterer-named-a-top-caterer-in-mesa-for-2025",
+    url: "https://thelocalcaterer.com/post/the-local-caterer-named-a-top-caterer-in-mesa-for-2025",
     icon: "🏆",
     highlight: true,
   },
@@ -185,7 +185,7 @@ const mediaMentions = [
     summary: "The Local Caterer was selected as the official caterer for the ALPFA Phoenix Gala at Warehouse 215, one of Phoenix's premier nonprofit and professional association events.",
     year: "2025",
     type: "Event Feature",
-    url: "https://www.thelocalcaterer.com/post/catering-the-alpfa-phoenix-gala-at-warehouse-215",
+    url: "https://thelocalcaterer.com/post/catering-the-alpfa-phoenix-gala-at-warehouse-215",
     image: null,
   },
   {
@@ -194,7 +194,7 @@ const mediaMentions = [
     summary: "BusinessRate officially recognized The Local Caterer as a Top 3 Caterer in Mesa for 2025, based entirely on verified Google Review data — a data-driven recognition of consistent excellence.",
     year: "2025",
     type: "Industry Recognition",
-    url: "https://www.thelocalcaterer.com/post/the-local-caterer-named-a-top-caterer-in-mesa-for-2025",
+    url: "https://thelocalcaterer.com/post/the-local-caterer-named-a-top-caterer-in-mesa-for-2025",
     image: null,
   },
 ];
