@@ -593,7 +593,7 @@ export default function CateringMenu() {
             style={{ border: "2px solid #EDE6D3", backgroundColor: "#F5EFE0", aspectRatio: "16 / 10", minHeight: "420px" }}
           >
             <iframe
-              src="https://www.flipsnack.com/7C95E5B569B/the-local-caterer-catering-collection/full-view.html"
+              src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=N0M5NUU1QjU2OUIrdDNsYjhpcDd0OQ%3D%3D"
               title="The Local Caterer Catering Collection 2026–2027 flipbook"
               className="absolute inset-0 w-full h-full"
               style={{ border: "none" }}
