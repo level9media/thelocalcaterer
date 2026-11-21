@@ -588,30 +588,38 @@ export default function CateringMenu() {
             Flip through our complete 2026–2027 catering catalog — weddings, corporate events, private parties, holiday gatherings and more,
             all prepared fresh in our Mesa kitchen and served across Phoenix and the East Valley. Every menu can be customized for your event.
           </p>
-          <div
-            className="relative w-full overflow-hidden shadow-lg"
-            style={{ border: "2px solid #EDE6D3", backgroundColor: "#F5EFE0", aspectRatio: "16 / 10", minHeight: "420px" }}
+          <a
+            href="https://www.flipsnack.com/7C95E5B569B/the-local-caterer-catering-collection"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open The Local Caterer Catering Collection 2026–2027 flipbook"
+            className="group flex flex-col md:flex-row items-center gap-8 p-6 md:p-10 shadow-lg transition-all hover:shadow-xl"
+            style={{ border: "2px solid #EDE6D3", backgroundColor: "#F5EFE0" }}
           >
-            <iframe
-              src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=N0M5NUU1QjU2OUIrdDNsYjhpcDd0OQ%3D%3D"
-              title="The Local Caterer Catering Collection 2026–2027 flipbook"
-              className="absolute inset-0 w-full h-full"
-              style={{ border: "none" }}
+            <img
+              src="/assets/catering-collection-cover.jpg"
+              alt="Cover of The Local Caterer Catering Collection 2026–2027"
+              width={900}
+              height={1164}
               loading="lazy"
-              allow="autoplay; clipboard-read; clipboard-write; fullscreen"
-              allowFullScreen
+              className="w-full max-w-[320px] h-auto shadow-md transition-transform group-hover:-translate-y-1"
             />
-          </div>
+            <div className="text-center md:text-left">
+              <p className="text-2xl md:text-3xl font-semibold mb-3" style={{ fontFamily: "'Cormorant Garamond', serif", color: "#1A1A1A" }}>
+                Tap to flip through the full catalog
+              </p>
+              <p className="text-base mb-6" style={{ color: "#4A4A4A", fontFamily: "'Outfit', sans-serif" }}>
+                Opens our interactive 2026–2027 Catering Collection — every menu, package and add-on in one place.
+              </p>
+              <span
+                className="inline-flex items-center gap-2 px-6 py-3 text-xs font-semibold uppercase tracking-widest"
+                style={{ backgroundColor: "#2D6A4F", color: "#F5EFE0", fontFamily: "'Outfit', sans-serif" }}
+              >
+                <BookOpen size={14} /> View the Catalog
+              </span>
+            </div>
+          </a>
           <div className="flex flex-wrap items-center gap-4 mt-6">
-            <a
-              href="https://www.flipsnack.com/7C95E5B569B/the-local-caterer-catering-collection"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 text-xs font-semibold uppercase tracking-widest transition-all"
-              style={{ backgroundColor: "#2D6A4F", color: "#F5EFE0", fontFamily: "'Outfit', sans-serif" }}
-            >
-              <BookOpen size={14} /> Open Full Screen
-            </a>
             <a
               href="https://thelocalcaterer.tripleseat.com/party_request/34341"
               target="_blank"
